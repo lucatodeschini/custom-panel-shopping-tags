@@ -14,28 +14,42 @@ This approach not only saves time but also ensures that you never forget to rest
 
 ### Prerequisites
 1. Ensure you have Python installed on your system. You can download it from [python.org](https://www.python.org/).
-2. Install the required Python dependencies by running:
+2. Create and activate a virtual environment:
+   - On Windows:
+     ```bash
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+3. Install the required Python dependencies by running:
    ```bash
    pip install -r requirements.txt
    ```
 
-### Running the Python Script
-1. Navigate to the project directory
+### Process
+1. **Edit the Tags File**:
+   - Open the `example-tags.yaml` file and customize it with your specific items.
+   - Once edited, rename the file to `tags.yaml` and place it in the `input/` directory.
 
-2. Execute the Python script:
-   ```bash
-   python main.py
-   ```
-   This script processes the `tags.yaml` file located in the `input/` directory and generates a `shopping_tags.pdf` file in the `output/` directory.
+2. **Generate QR Codes**:
+   - Run the Python script to process the `tags.yaml` file and generate QR codes:
+     ```bash
+     python main.py
+     ```
+   - The output, including the `shopping_tags.pdf`, will be saved in the `output/` directory.
 
-### Custom Panel Setup for Home Assistant
-1. Copy the `shopping-tag-panel.js` file to your Home Assistant configuration directory under `www`:
-   ```bash
-   cp shopping-tag-panel.js /config/www/
-   ```
-   On Windows, you can manually copy the file to the `/config/www/` directory in your Home Assistant setup.
+3. **Add the Custom Panel**:
+   - Copy the `shopping-tag-panel.js` file to your Home Assistant configuration directory under `www`:
+     ```bash
+     cp shopping-tag-panel.js /config/www/
+     ```
+     On Windows, you can manually copy the file to the `/config/www/` directory in your Home Assistant setup.
 
-2. Add the custom panel to your Home Assistant configuration:
+4. **Add the Panel Configuration**:
    - Open your `configuration.yaml` file in Home Assistant.
    - Add the following lines:
      ```yaml
@@ -47,7 +61,12 @@ This approach not only saves time but also ensures that you never forget to rest
          module_url: /local/shopping-tag-panel.js
      ```
 
-3. Restart Home Assistant to apply the changes.
+5. **Add the Script Configuration**:
+   - Open the `ha-script.yaml` file in this project.
+   - Copy its content and paste it into the `scripts` section of your Home Assistant configuration.
+
+6. **Restart Home Assistant**:
+   - Restart Home Assistant to apply all changes and ensure everything is working as expected.
 
 ## Notes
 - Ensure the `www` directory exists in your Home Assistant configuration folder. If it does not exist, create it manually.

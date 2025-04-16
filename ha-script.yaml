@@ -1,0 +1,15 @@
+add_items_to_shopping_list:
+  alias: Add items to shopping list
+  description: Takes a list of items and adds each to the shopping list
+  fields:
+    items:
+      description: List of items to add
+      example: Milk, Eggs, Bread
+  sequence:
+  - repeat:
+      for_each: '{{ items }}'
+      sequence:
+      - data:
+          name: '{{ repeat.item }}'
+        action: shopping_list.add_item
+  mode: single
