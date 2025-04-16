@@ -1,0 +1,145 @@
+tags:
+  - name: Bathroom Category 1
+    items:
+      - name: Cream
+        description: ""
+      - name: Diapers
+        description: ""
+      - name: Wipes
+        description: ""
+      - name: Soap
+        description: ""
+  
+  - name: Bathroom Category 2
+    items:
+      - name: Toilet Paper
+        description: ""
+      - name: Toothpaste
+        description: ""
+      - name: Deodorant
+        description: ""
+      - name: Hand Soap
+        description: ""
+      - name: Shampoo
+        description: ""
+      - name: Shower Soap
+        description: ""
+
+  - name: Bathroom Category 3
+    items:
+      - name: Bleach
+        description: ""
+      - name: Ammonia
+        description: ""
+      - name: Degreaser
+        description: ""
+      - name: Floor Cleaner
+        description: ""
+      - name: Glass Cleaner
+        description: ""
+
+  - name: Bathroom Category 4
+    items:
+      - name: Laundry Pods
+        description: ""
+      - name: Fabric Softener
+        description: ""
+      - name: Stain Remover
+        description: ""
+      - name: Baby Liquid Soap
+        description: ""
+      - name: Baby Fabric Softener
+        description: ""
+
+  - name: Kitchen Sink
+    items:
+      - name: Dish Soap
+        description: ""
+      - name: Sponges
+        description: ""
+      - name: Wet Bags
+        description: ""
+      - name: Mixed Waste Bags
+        description: ""
+
+  - name: Kitchen Fridge
+    items:
+      - name: Butter
+        description: ""
+      - name: Yogurt
+        description: ""
+      - name: Eggs
+        description: ""
+      - name: Fruits
+        description: ""
+      - name: Vegetables
+        description: ""
+
+  - name: Kitchen Freezer
+    items:
+      - name: Peas
+        description: ""
+      - name: Broad Beans
+        description: ""
+      - name: Spinach
+        description: ""
+      - name: Edamame
+        description: ""
+
+  - name: Kitchen Miscellaneous
+    items:
+      - name: Paper Towels
+        description: ""
+      - name: Napkins
+        description: ""
+      - name: Parchment Paper
+        description: ""
+      - name: Cling Film
+        description: ""
+      - name: Aluminum Foil
+        description: ""
+      - name: Sparkling Water
+        description: ""
+
+  - name: Kitchen Pantry
+    items:
+      - name: Pasta
+        description: ""
+      - name: Rice
+        description: ""
+      - name: Salt
+        description: ""
+      - name: Sliced Bread
+        description: ""
+      - name: Oil
+        description: ""
+
+  - name: Small Kitchen
+    items:
+      - name: Milk
+        description: ""
+      - name: Water
+        description: ""
+      - name: Vegetables
+        description: ""
+      - name: Protein
+        description: ""
+
+  - name: Breakfast Items
+    items:
+      - name: Coffee
+        description: ""
+      - name: Milk
+        description: ""
+      - name: Tea
+        description: ""
+      - name: Cookies A
+        description: ""
+      - name: Cookies B
+        description: ""
+      - name: Jam
+        description: ""
+      - name: Toasted Bread
+        description: ""
+      - name: Corn Flakes
+        description: ""
