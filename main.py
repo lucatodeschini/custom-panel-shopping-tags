@@ -1,6 +1,7 @@
 import io
 import yaml
 import qrcode
+import os
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import mm
@@ -37,7 +38,10 @@ def draw_qr(canvas, qr_img, x, y, label):
     canvas.setFont("Helvetica", 10)
     canvas.drawCentredString(x + QR_SIZE / 2, y - 5, label)
 
-def create_pdf(data, output_path="shopping_tags.pdf"):
+def create_pdf(data, output_path="output/shopping_tags.pdf"):
+    # Ensure the output directory exists
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
     c = canvas.Canvas(output_path, pagesize=A4)
     width, height = A4
     x = PADDING
@@ -61,6 +65,6 @@ def create_pdf(data, output_path="shopping_tags.pdf"):
     c.save()
 
 if __name__ == "__main__":
-    data = load_yaml("tags.yaml")  # Replace with your actual YAML file path
+    data = load_yaml("input/tags.yaml")  # Replace with your actual YAML file path
     create_pdf(data)
-    print("PDF created: shopping_tags.pdf")
+    print("PDF created: output/shopping_tags.pdf")
