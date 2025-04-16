@@ -2,6 +2,8 @@
 
 This project provides a Python script and a custom panel for Home Assistant to manage shopping tags.
 
+![Tags Overview](assets/Shopping-Tag.gif)
+
 ## About Tags
 
 The idea behind this project is to simplify and streamline the process of managing your shopping list. By placing QR code or NFC tags in strategic locations around your home, you can quickly access relevant items that you frequently purchase from that location.
