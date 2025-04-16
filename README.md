@@ -2,6 +2,14 @@
 
 This project provides a Python script and a custom panel for Home Assistant to manage shopping tags.
 
+## About Tags
+
+The idea behind this project is to simplify and streamline the process of managing your shopping list. By configuring tags, you can create a structured and categorized list of items that you frequently purchase and are likely to run out of. These tags act as shortcuts to help you quickly identify and add items to your shopping list without having to manually search for them every time.
+
+For example, you can create tags for different categories such as "Bathroom Essentials," "Kitchen Supplies," or "Breakfast Items." Each tag contains a list of items that belong to that category, making it easy to navigate and manage your shopping needs.
+
+This approach not only saves time but also ensures that you never forget to restock essential items. The tags are defined in the `tags.yaml` file, which is processed by the Python script to generate a PDF or other outputs for easy reference.
+
 ## Setup Instructions
 
 ### Prerequisites
@@ -12,10 +20,8 @@ This project provides a Python script and a custom panel for Home Assistant to m
    ```
 
 ### Running the Python Script
-1. Navigate to the project directory:
-   ```bash
-   cd c:\Users\Luca\Projects\ha-tags
-   ```
+1. Navigate to the project directory
+
 2. Execute the Python script:
    ```bash
    python main.py
