@@ -4,11 +4,13 @@ This project provides a Python script and a custom panel for Home Assistant to m
 
 ## About Tags
 
-The idea behind this project is to simplify and streamline the process of managing your shopping list. By configuring tags, you can create a structured and categorized list of items that you frequently purchase and are likely to run out of. These tags act as shortcuts to help you quickly identify and add items to your shopping list without having to manually search for them every time.
+The idea behind this project is to simplify and streamline the process of managing your shopping list. By placing QR code or NFC tags in strategic locations around your home, you can quickly access relevant items that you frequently purchase from that location.
 
-For example, you can create tags for different categories such as "Bathroom Essentials," "Kitchen Supplies," or "Breakfast Items." Each tag contains a list of items that belong to that category, making it easy to navigate and manage your shopping needs.
+For example, you might place a tag in your bathroom that, when scanned, shows a custom page with common bathroom items like toothpaste and shampoo. Similarly, a tag in your kitchen might show bread and mayonnaise. This allows you to easily add these items to your shopping list right where you notice you need them.
 
-This approach not only saves time but also ensures that you never forget to restock essential items. The tags are defined in the `tags.yaml` file, which is processed by the Python script to generate a PDF or other outputs for easy reference.
+This approach not only saves time but also ensures that you never forget to restock essential items. The script generates PDF documents containing the QR codes, which you can print and place around your home. Future updates will include support for programming NFC tags as well.
+
+The tags and their associated items are defined in the tags.yaml file, which is processed by the Python script to generate the QR codes and configure the custom panel in Home Assistant.
 
 ## Setup Instructions
 
